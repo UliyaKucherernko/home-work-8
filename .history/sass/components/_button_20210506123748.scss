@@ -1,0 +1,12 @@
+button {
+  cursor: pointer;
+  font-family: inherit;
+
+  &:hover,
+  &:focus {
+    background: $colorAccent;
+    color: $colorContent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

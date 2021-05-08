@@ -1,0 +1,15 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.header__container {
+  color: $colorTitle;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

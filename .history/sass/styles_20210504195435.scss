@@ -1,0 +1,105 @@
+@import "./vendors/modern-normalize";
+@import "./utils/variables";
+
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/button";
+@import "./components/social-icon";
+@import "./components/logo";
+@import "./components/section-title";
+@import "./components/modal";
+
+@import "./layouts/grid";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/hero";
+@import "./layouts/gallery";
+@import "./layouts/work";
+@import "./layouts/team";
+@import "./layouts/cliens";
+@import "./layouts/features";
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+textarea {
+  font-family: inherit;
+  width: 100%;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 12px 16px;
+  border-color: rgba(33, 33, 33, 0.2);
+  resize: none;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.contract {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contract-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--main-text-color);
+  padding-left: 24px;
+}
+
+.contract-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: var(--content-color);
+  border: 2px solid var(--title-color);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contract-checkbox:focus {
+  outline: 1px solid var(--title-color);
+}
+
+.contract__link {
+  color: var(--accent-color);
+}
+
+input[type="checkbox"] {
+  /*скрываем*/
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.contract input[type="checkbox"]:checked + .contract-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/svg/icon\ check.svg");
+  background-size: contain;
+  background-origin: border-box;
+  background-color: var(--accent-color);
+  border: 2px solid transparent;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

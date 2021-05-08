@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>WebStudio Портфолио</title>
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+   <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+<!-- <header class="header">
+   <div class="header__container container">
+      <nav class="navigation">
+         <a class="link logo" href="index.html">
+            <span class="web">Web</span><span class="studio">Studio</span></a>
+         <ul class="list">
+            <li class="header__menu-item">
+               <a href="./index.html" class="link header__menu-link">Студия</a>
+            </li>
+            <li class="header__menu-item">
+               <a href="./porfolio.html" class="link header__menu-link current">Портфолио</a>
+            </li>
+            <li class="header__menu-item">
+               <a href="" class="link header__menu-link">Контакты</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="list header__contact-item">
+         <a class="link header__link" href="mailto:info@devstudio.com">
+            <svg class="header__icon" width="16" height="12">
+               <use href="./images/icons-sprite.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com
+         </a>
+         <a class="link header__link" href="tel:+380961111111">
+            <svg class="header__icon" width="10" height="16">
+               <use href="./images/icons-sprite.svg#icon-phone"></use>
+            </svg>
+            +38 096 111 11 11
+         </a>
+      </div>
+   </div>
+</header> -->
+     <!--что входит в портфолио-->
+    <main>
+      <section class="gallery">
+         <div class="container">
+          <ul class="gallery__btn">
+              <li class="gallery__btn-item"><button class="gallery__btn-text" type="button">Все</button></li>
+              <li class="gallery__btn-item"><button class="gallery__btn-text" type="button">Веб-сайты</button></li>
+              <li class="gallery__btn-item"><button class="gallery__btn-text" type="button">Приложения</button></li>
+              <li class="gallery__btn-item"><button class="gallery__btn-text" type="button">Дизайн</button></li>
+              <li class="gallery__btn-item"><button class="gallery__btn-text" type="button">Маркетинг</button></li>
+          </ul>
+ <ul class="gallery__list">
+      <li class="gallery__card grid-item">
+         <div class="gallery__thumb">
+            <img src="./images/1-monitor.jpg" alt="на мониторе 3 фотокарточки людей" width="370">
+               <div class="gallery__overlay">
+                  <p class="gallery__text-overlay">Технокряк это современная площадка распространения коронавируса.
+                        Компании используют эту платформу для цифрового
+                        шпионажа и атак на защищённые сервера конкурентов.</p>
+               </div>
+         </div>
+                  <div class="gallery__text">
+                       <h3 class="gallery__name">Технокряк</h3>
+                       <p class="gallery__main-name">Веб-сайт</p>
+                  </div>
+      </li>
+
+   <li class="gallery__card grid-item">
+         <div class="gallery__thumb">
+            <picture>
+               <source media="(max-width: 767px)" srcset="./images/mobile/2-nba-mobile.jpg 1x,
+                                                            ./images/mobile/2-nba-mobile@2x.jpg 2x">
+               <source media="(max-width: 1199px)" srcset="./images/tablet/2-nba-tablet.jpg 1x,
+                                                            ./images/tablet/2-nba-tablet@2x.jpg 2x">
+               <source media="(min-width: 1200px)" srcset="./images/desktop/box 2-desktop.jpg 1x,
+                                                            ./images/desktop/box 2-desktop@2x.jpg 2x">
+               <img src="./images/portfolio/desktop/project1_1x.jpg" alt="2 пaрня играют в баскетбол">
+            </picture>
+            
+               <div class="gallery__overlay">
+                     <p class="gallery__text-overlay">New Orleans Pelicans — профессиональный баскетбольный клуб,
+                         выступающий в Национальной баскетбольной ассоциации.
+                     Изначально годом основания команды считался 1988 год.</p>
+               </div>
+                     </div>
+                  <div class="gallery__text">  
+                     <h3 class="gallery__name">Постер New Orlean vs Golden Star</h3>
+                        <p class="gallery__main-name">Дизайн</p>
+                  </div>
+    </li>
+      
+   <li class="gallery__card grid-item">
+         <div class="gallery__thumb">
+           <img src="./images/3-seafood.jpg" alt="рыбный ресторан" width="370">
+               <div class="gallery__overlay">
+                     <p class="gallery__text-overlay">Рыбный ресторан «Seafood» расположен по бульвару Леси Украинки, недалеко от станции метро Печерская. При входе
+                     слева расположен большой аквариум со свежими устрицами.</p>
+               </div>
+         </div>
+                  <div class="gallery__text">
+                     <h3 class="gallery__name">Ресторан Seafood</h3>
+                     <p class="gallery__main-name">Приложение</p>  
+                  </div>
+   </li>
+      
+      <li class="gallery__card grid-item">
+         <div class="gallery__thumb">
+            <img src="./images/4-prime.jpg" alt="наушники" width="370">
+               <div class="gallery__overlay">
+                  <p class="gallery__text-overlay">Наушники представляют собой пару небольших по размеру головных телефона или блока наушника,
+                      надеваемых на голову или вставляемых прямо в ушные каналы.</p>
+               </div>
+         </div>
+                  <div class="gallery__text">
+                     <h3 class="gallery__name">Проект Prime</h3>
+                     <p class="gallery__main-name">Маркетинг</p> 
+                  </div>
+      </li>
+      
+                     
+      <li class="gallery__card grid-item">
+         <div class="gallery__thumb">
+            <img src="./images/5-boxes.jpg" alt="2 коробки разного размера" width="370">
+               <div class="gallery__overlay">
+                  <p class="gallery__text-overlay">BOXES - изделие простой конструкции из картона или другого плотного материала
+                      в форме многогранника</p>
+               </div>
+         </div>
+                  <div class="gallery__text">
+                     <h3 class="gallery__name">Проект Boxes</h3>
+                     <p class="gallery__main-name">Приложение</p>
+                  </div>
+      </li>
+     
+      <li class="gallery__card grid-item">
+         <div class="gallery__thumb">
+           <img src="./images/6-borders.jpg" alt="монитор борд с картой мира" width="370">
+               <div class="gallery__overlay">
+                  <p class="gallery__text-overlay">Реклама - аправление в маркетинговых коммуникациях, в рамках которого производится 
+                     распространение информации для привлечения
+                  внимания к объекту рекламирования с целью формирования или поддержания интереса к нему.</p>
+               </div>
+         </div>
+                  <div class="gallery__text">
+                     <h3 class="gallery__name">Inspiration has no Borders</h3>
+                     <p class="gallery__main-name">Веб-сайт</p>
+                  </div>
+      </li>
+
+      <li class="gallery__card grid-item">
+         <div class="gallery__thumb">
+            <img src="./images/7-magazine.jpg" alt="журнал" width="370">
+               <div class="gallery__overlay">
+                  <p class="gallery__text-overlay">Специальный вид издания художественного произведения, куда включены дополнительные материалы, отсутствующие в стандартной версии.</p>
+               </div>
+         </div>
+                  <div class="gallery__text">
+                     <h3 class="gallery__name">Издание Limited Edition</h3>
+                     <p class="gallery__main-name">Дизайн</p>
+                  </div> 
+      </li>
+      
+      <li class="gallery__card grid-item">
+         <div class="gallery__thumb">
+            <img src="./images/8-labels.jpg" alt="белая этикетка бирка" width="370">
+               <div class="gallery__overlay">
+                  <p class="gallery__text-overlay">Label-графический или текстовый знак, 
+                     нанесённый в виде наклейки, бирки или талона на товар, экспонат, любой другой продукт
+                  производства, с указанием торговой марки производителя.</p>
+               </div>
+         </div>
+                  <div class="gallery__text"> 
+                     <h3 class="gallery__name">Проект LAB</h3>
+                     <p class="gallery__main-name">Маркетинг</p> 
+                  </div>
+      </li>
+                   
+      <li class="gallery__card grid-item">
+         <div class="gallery__thumb">
+            <img src="./images/9-nout.jpg" alt="печатают на ноуте" width="370">
+               <div class="gallery__overlay">
+                  <p class="gallery__text-overlay">Offline/Online - работа, доступная для широких масс населения, использующая главные достоинства Интернета</p>
+               </div>
+         </div>
+                     <div class="gallery__text">
+                        <h3 class="gallery__name">Growing Business</h3>
+                        <p class="gallery__main-name">Приложение</p> 
+                     </div>
+       </li>
+   </ul>
+      </div>
+     </section>
+    </main>
+
+   <!--подвал-->
+   <!-- <footer class="footer">
+      <div class="container footer__container">
+         <div class="footer__block">
+            <a class="link logo" href="index.html">
+               <span class="web">Web</span><span class="footer__studio">Studio</span></a>
+            <address>
+               <ul class="footer__list">
+                  <li>
+                     <a href="" class="link footer__adress">г. Киев, пр-т Леси Украинки, 26</a>
+                  </li>
+                  <li>
+                     <a href="mailto:info@example.com" class="link footer__contact">info@example.com</a>
+                  </li>
+                  <li>
+                     <a href="+380991111111" class="link footer__contact">+38 099 111 11 11</a>
+                  </li>
+               </ul>
+            </address>
+         </div>
+         <div class="footer__block">
+            <p class="footer__sleng">присоединяйтесь</p>
+            <ul class="social-icons">
+               <li class="social-icon-item">
+                  <a href="" class="social-icon-link footer__icon">
+                     <svg>
+                        <use href="./images/icons-sprite.svg#icon-instagram"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social-icon-item">
+                  <a href="" class="social-icon-link footer__icon">
+                     <svg>
+                        <use href="./images/icons-sprite.svg#icon-twitter"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social-icon-item">
+                  <a href="" class="social-icon-link footer__icon">
+                     <svg>
+                        <use href="./images/icons-sprite.svg#icon-facebook"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social-icon-item">
+                  <a href="" class="social-icon-link footer__icon">
+                     <svg>
+                        <use href="./images/icons-sprite.svg#icon-linkedin"></use>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="footer__block">
+            <p class="footer__sleng">подпишитесь на рассылку</p>
+            <form name="footer__form" class="footer__form" novalidate>
+               <input type="email" name="email" class="footer__contact-form" id="user_email" placeholder="E-mail" />
+               <button type="submit" class="footer__button">Подписаться
+                  <svg class="footer__icon-send" width="24px" height="24px">
+                     <use href="./images/icons-sprite.svg#icon-icon-send"></use>
+                  </svg>
+               </button>
+            </form>
+         </div>
+      </div>
+   </footer> -->
+   </body>
+   </html>

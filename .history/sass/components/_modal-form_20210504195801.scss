@@ -1,0 +1,23 @@
+.modal__form {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal__form-block {
+  position: relative;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.modal__form-block:hover svg,
+.modal__form-block:focus svg {
+  fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__form-blok {
+  position: relative;
+  width: 100%;
+}
