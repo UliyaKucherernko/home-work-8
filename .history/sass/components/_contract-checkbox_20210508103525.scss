@@ -1,0 +1,142 @@
+// .contract {
+//   position: relative;
+//   margin-top: 20px;
+// }
+
+// .contract-text {
+//   font-weight: 400;
+//   display: block;
+//   position: relative;
+//   font-size: 12px;
+//   line-height: 1.17;
+//   color: $colorMainText;
+//   padding-left: 24px;
+
+//   @media screen and (min-width: 1200px) {
+//     font-size: 14px;
+//     line-height: 1.17;
+//   }
+// }
+
+// .contract-checkbox {
+//   position: absolute;
+//   top: 50%;
+//   left: 0;
+//   transform: translateY(-50%);
+//   width: 15px;
+//   height: 15px;
+//   background-color: $colorContent;
+//   border: 2px solid $colorTitle;
+//   border-radius: 2px;
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:focus {
+//     outline: 1px solid $colorTitle;
+//   }
+// }
+
+// .contract__link {
+//   color: $colorAccent;
+// }
+
+// input[type="checkbox"] {
+//   /*прячем*/
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
+//   white-space: nowrap;
+//   clip-path: inset(100%);
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }
+
+// .contract input[type="checkbox"]:checked + .contract-checkbox {
+//   position: absolute;
+//   top: 50%;
+//   left: 0;
+//   transform: translateY(-50%);
+//   width: 15px;
+//   height: 15px;
+//   background-image: url("../images/svg/icon\ check.svg");
+//   background-size: contain;
+//   background-origin: border-box;
+//   background-color: $colorAccent;
+//   border: 2px solid transparent;
+//   border-radius: 2px;
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+.contract {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contract-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  color: $colorMainText;
+  padding-left: 24px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.17;
+  }
+}
+.contract-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  width: 15px;
+  height: 15px;
+
+  background-color: $colorContent;
+  border: 2px solid $colorTitle;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:focus {
+  outline: 1px solid $colorTitle;
+}
+
+.contract__link {
+  color: $colorAccent;
+}
+
+input[type="checkbox"] {
+  /*скрываем*/
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.contract input[type="checkbox"]:checked + .contract-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/svg/icon\ check.svg");
+  background-size: contain;
+  background-origin: border-box;
+  background-color: $colorAccent;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

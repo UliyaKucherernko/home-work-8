@@ -1,0 +1,110 @@
+.header__container {
+  color: $colorTitle;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    flex-wrap: wrap;
+    text-align: center;
+    .header__contact-item {
+      margin-left: 84px;
+      align-self: normal;
+      flex-direction: column;
+    }
+  }
+}
+
+.header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.header__adress {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $colorMainText;
+}
+
+.header__menu-link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.header__link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: $colorMainText;
+
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.header__menu-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.header__icon {
+  fill: $colorMainText;
+  margin-right: 10px;
+}
+
+.header__link {
+  &:hover {
+    .header__icon {
+      fill: $colorAccent;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &:focus {
+    .header__icon {
+      fill: $colorAccent;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.current {
+  color: $colorAccent;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+    background-color: $colorAccent;
+  }
+}

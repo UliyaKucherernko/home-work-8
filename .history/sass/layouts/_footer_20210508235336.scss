@@ -1,0 +1,124 @@
+.footer {
+  padding: 60px 0;
+  // box-sizing: border-box;
+  background: $colorDarkBg;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__block {
+  flex-basis: calc((50% - 45px) / 2);
+
+  &:last-child {
+    flex-basis: calc(50% - 15px);
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.footer__list li {
+  margin-top: 9px;
+  list-style: none;
+}
+
+.footer__contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-links .footer__list {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.footer__adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $colorContent;
+}
+
+.footer__sleng {
+  padding: 12px, 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $colorContent;
+}
+
+.footer__contact-form {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: $colorContent;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer__form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 12px;
+  height: 50px;
+  width: 200px;
+  padding: 10px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: $colorContent;
+  background-color: $colorAccent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.footer__icon-send {
+  margin-left: 10px;
+  fill: $colorContent;
+}
+
+.footer__icon svg {
+  fill: $colorContent;
+}
+
+.footer__icon {
+  background: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background: $colorAccent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

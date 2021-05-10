@@ -1,10 +1,12 @@
-.modal__form {
-  margin-top: 12px;
-}
+// .modal__form {
+//   margin-right: auto;
+//   margin-left: auto;
+// }
 
-.modal__form-block {
-  position: relative;
-  width: 100%;
+// .modal__form-block {
+//   position: relative;
+//   height: 40px;
+//   margin-bottom: 10px;
 
   &:hover svg,
   &:focus svg {
@@ -14,7 +16,12 @@
   }
 }
 
-/* textarea {
+.modal__form-blok {
+  position: relative;
+  width: 100%;
+}
+
+textarea {
   font-family: inherit;
   width: 100%;
   border-width: 2px;
@@ -25,4 +32,3 @@
   margin-top: 4px;
   margin-bottom: 20px;
 }
- */

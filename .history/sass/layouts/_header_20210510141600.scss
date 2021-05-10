@@ -1,0 +1,123 @@
+.header__container {
+  color: $colorTitle;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media screen and (min-width: 767.98px) and (max-width: 1200px) {
+    flex-wrap: wrap;
+    text-align: center;
+
+    .header__contact-item {
+      justify-content: space-evenly;
+      align-self: normal;
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .header__contacts-wrap {
+    display: none;
+  }
+}
+
+.header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 16px 0;
+    position: relative;
+  }
+}
+
+.header__adress {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $colorMainText;
+}
+
+.header__menu-link {
+  position: relative;
+  display: block;
+
+  padding-bottom: 32px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.header__link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: $colorMainText;
+
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.header__menu-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.header__icon {
+  fill: $colorMainText;
+  margin-right: 10px;
+}
+
+.header__link {
+  &:hover {
+    .header__icon {
+      fill: $colorAccent;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &:focus {
+    .header__icon {
+      fill: $colorAccent;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.current {
+  color: $colorAccent;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+    background-color: $colorAccent;
+  }
+}
