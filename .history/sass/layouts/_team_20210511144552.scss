@@ -34,6 +34,7 @@
 }
 
 .team__card {
+  flex-basis: calc(100% - 30px);
   text-align: center;
   justify-content: center;
   background: $colorContent;
@@ -50,7 +51,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    --grid-item: 2;
+    flex-basis: calc(100% / 2 - 30px)
     width: 354px;
     height: 536px;
     margin-left: 30px;
@@ -58,7 +59,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    --grid-item: 4;
+    
     width: 270px;
     height: 428px;
   }

@@ -177,11 +177,8 @@ li {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -270,13 +267,19 @@ button:hover, button:focus {
 .section-title {
   white-space: nowrap;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
 }
 
 .backdrop {
@@ -673,12 +676,12 @@ input[type="checkbox"] {
   align-items: center;
 }
 
-@media screen and (min-width: 767.98px) and (max-width: 1200px) {
+@media screen and (min-width: 767.98px) {
   .header__container {
     text-align: center;
   }
   .header__container .header__contact-item {
-    margin-right: -84px;
+    margin-left: 84px;
     justify-content: space-evenly;
     align-self: normal;
     flex-direction: column;
@@ -1166,7 +1169,7 @@ input[type="checkbox"] {
 }
 
 .gallery {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .gallery__text {
@@ -1295,6 +1298,7 @@ input[type="checkbox"] {
 @media screen and (min-width: 1200px) {
   .work__boxes {
     display: flex;
+    justify-content: center;
     margin-top: 50px;
     list-style: none;
     padding-left: 0;
@@ -1316,18 +1320,23 @@ input[type="checkbox"] {
   .work__content {
     position: absolute;
     bottom: 0;
-    padding: 27px 0;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.14;
-    text-align: center;
-    text-transform: uppercase;
     top: 224px;
     right: 0;
     width: 100%;
     height: 70px;
     color: #ffffff;
     background-color: rgba(47, 48, 58, 0.8);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work__box-text {
+    padding: 27px 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
@@ -1375,11 +1384,10 @@ input[type="checkbox"] {
 }
 
 .team__card {
-  --grid-item: 1;
   text-align: center;
   justify-content: center;
   background: #ffffff;
-  width: 450px;
+  width: 100%;
   height: 622px;
   box-sizing: border-box;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1389,7 +1397,7 @@ input[type="checkbox"] {
 @media screen and (max-width: 767px) {
   .team__card {
     max-width: 450px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -1408,7 +1416,6 @@ input[type="checkbox"] {
     --grid-item: 4;
     width: 270px;
     height: 428px;
-    margin-top: 0;
   }
 }
 
@@ -1470,7 +1477,6 @@ input[type="checkbox"] {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
   margin-left: -30px;
   margin-bottom: -30px;
   list-style: none;
@@ -1508,6 +1514,10 @@ input[type="checkbox"] {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.client__link:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1554,6 +1564,7 @@ input[type="checkbox"] {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1563,28 +1574,22 @@ input[type="checkbox"] {
 }
 
 .feature__item {
+  max-width: 450px;
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 1200px) {
-  .feature__item {
-    --grid-item: 1;
-    width: 450px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature__item {
-    --grid-item: 2;
-    width: 354px;
+    flex-basis: calc(100% / 2 - 30px);
+    max-width: 354px;
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature__item {
-    --grid-item: 4;
-    width: 270px;
+    flex-basis: calc(100% / 4 - 30px);
+    max-width: 270px;
     margin-right: 30px;
   }
 }
@@ -1632,7 +1637,6 @@ input[type="checkbox"] {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
   margin-top: -30px;
 }
 

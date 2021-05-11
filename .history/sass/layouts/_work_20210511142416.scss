@@ -10,7 +10,6 @@
 .work__boxes {
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: center;
     margin-top: 50px;
     list-style: none;
     padding-left: 0;
@@ -44,11 +43,9 @@
 
 .work__box-text {
   @media screen and (min-width: 1200px) {
-    padding: 27px 0;
     font-size: 14px;
     font-weight: bold;
     line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
-  }
 }

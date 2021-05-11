@@ -34,6 +34,7 @@
 }
 
 .team__card {
+  --grid-item: 1;
   text-align: center;
   justify-content: center;
   background: $colorContent;

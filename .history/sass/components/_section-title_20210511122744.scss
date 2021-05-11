@@ -9,7 +9,7 @@
   letter-spacing: 0.03em;
   color: $colorTitle;
 
-  @media screen and (min-width: 1200px) {
+  @media screen (max-width: 1199px) {
     margin-bottom: 50px;
   }
 }
