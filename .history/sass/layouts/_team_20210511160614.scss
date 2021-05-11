@@ -1,0 +1,110 @@
+.team {
+  padding: 94px 0;
+  background-color: $colorTeam;
+
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+
+.team__body {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+  list-style: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --grid-item: 4;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+
+.team__card {
+  text-align: center;
+  justify-content: center;
+  background: $colorContent;
+  width: 100%;
+  height: 622px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    margin-top: -30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 2;
+    width: 354px;
+    height: 536px;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --grid-item: 4;
+    width: 270px;
+    height: 428px;
+  }
+}
+
+.team__names {
+  padding: 30px 0;
+}
+
+.names {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: $colorTitle;
+}
+
+.team__profession {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: $colorMainText;
+}
+
+.team__icon {
+  fill: $colorSocial;
+
+  &:hover,
+  &:focus {
+    fill: $colorContent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.team__icon {
+  background: $colorContent;
+
+  &:hover,
+  &:focus {
+    background: $colorAccent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
